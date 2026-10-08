@@ -1,33 +1,40 @@
 ## Meta
 | Field | Value |
-| Project | Splash and Scrub: boat-hero version |
-| Last Active | 2026-10-01 |
+| Project | Splash and Scrub: logo-hero option (repo name is historical) |
+| Last Active | 2026-10-08 |
 | Status | shipping |
 | Location | /home/wner/splash-and-scrub-boat-hero |
 | Repo | jimmyardis/splash-and-scrub-boat-hero (public) |
 | Live URL | https://jimmyardis.github.io/splash-and-scrub-boat-hero/ |
 
 ## Current State
-An alternate version of the Splash and Scrub site (Irmo, SC car and boat wash),
-published in its own repo so it sits beside the production site at
-splashandscrubsc.com without replacing it. One self-contained `index.html`
-(~2.8 MB) with a photo hero, a light page background, and a single responsive
-layout instead of the production site's separate desktop and mobile trees. Live
-on GitHub Pages and verified byte-for-byte against the delivered file.
+Despite the repo name, this now hosts the **logo-hero option** for the client to
+compare with production. It is production's `index.html` (painted design, live
+Google Maps embed, bays photo in gallery slot 3) with the original painted
+logo banner restored as the hero on desktop and mobile. Production at
+splashandscrubsc.com has the boat photo hero instead. One self-contained file,
+~7.8 MB.
 
 ## Next Action
-Decide whether this version replaces the production site at splashandscrubsc.com
-or stays a side-by-side preview.
+The client picks logo hero (this page) or boat hero (production). If they choose
+this one, copy this `index.html` over production and retire this repo.
 
 ## Blockers
 None.
 
 ## Open Questions
-- Is this a preview for the owner to compare, or the intended replacement for
-  the live site?
-- If it replaces production, does this repo get retired afterwards?
+- Which hero does the client want: logo (here) or boat photo (production)?
 
 ## Session Log
+### 2026-10-08
+- The owner disliked this repo's light single-layout redesign, so production
+  got its boat photo instead, and this repo was overwritten with a comparison
+  build: production's current file with the original painted logo hero restored
+  (the #services panel and mobile `.hero-art` taken from production commit
+  c726216), keeping the map embed and the re-cropped bays photo.
+- The old light redesign is only in this repo's git history now (commit before
+  this one).
+- Verified live on GitHub Pages.
 ### 2026-10-01
 - Copied `splash-and-scrub-boat-hero.html` from Windows Downloads as
   `index.html`, added `.nojekyll`, and created the public repo
